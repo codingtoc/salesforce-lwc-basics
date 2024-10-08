@@ -1,6 +1,6 @@
-import { LightningElement } from "lwc";
+import { api, LightningElement } from "lwc";
 
 export default class PrivatePublicDemo extends LightningElement {
-  message = "Private Property";
-  recordId;
+  message = "Public Property";
+  @api recordId;
 }
