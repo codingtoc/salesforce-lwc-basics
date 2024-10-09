@@ -13,14 +13,16 @@ export default class WireAdapterDemo extends LightningElement {
   record; // data and error
 
   get name() {
-    return this.record.data
-      ? getFieldValue(this.record.data, "Account.Name")
-      : "";
+    // return this.record.data
+    //   ? getFieldValue(this.record.data, "Account.Name")
+    //   : "";
+    return this.record.data.fields.Name.value;
   }
 
   get phone() {
-    return this.record.data
-      ? getFieldValue(this.record.data, "Account.Phone")
-      : "";
+    // return this.record.data
+    //   ? getFieldValue(this.record.data, "Account.Phone")
+    //   : "";
+    return this.record.data.fields.Phone.value;
   }
 }
