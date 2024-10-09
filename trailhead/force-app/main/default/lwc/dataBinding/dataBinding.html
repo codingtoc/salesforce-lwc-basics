@@ -1,5 +1,12 @@
 <template>
   <lightning-card title="Fetch Data Using Property">
     <p class="slds-var-m-around_medium">Hello, {greeting}!</p>
+    <lightning-input
+      class="slds-var-m-around_medium"
+      label="Name"
+      value={greeting}
+      onchange={handleChange}
+    >
+    </lightning-input>
   </lightning-card>
 </template>
