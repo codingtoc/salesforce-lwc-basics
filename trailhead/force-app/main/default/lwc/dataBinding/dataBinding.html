@@ -1,0 +1,24 @@
+<template>
+  <lightning-card title="Fetch Data Using querySelectorAll">
+    <div class="slds-var-m-around_medium">
+      <p>Hello, {firstName} {lastName}!</p>
+      <lightning-input
+        name="fname"
+        label="First Name"
+        value={firstName}
+      ></lightning-input>
+      <br />
+      <lightning-input
+        name="lname"
+        label="Last Name"
+        value={lastName}
+      ></lightning-input>
+      <br />
+      <lightning-button
+        label="Click Me"
+        onclick={handleClick}
+        variant="brand"
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
