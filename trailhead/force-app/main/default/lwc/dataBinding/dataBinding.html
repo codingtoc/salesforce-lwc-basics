@@ -1,13 +1,13 @@
 <template>
-  <lightning-card title="Fetch Data Using Getters">
+  <lightning-card title="Fetch Data Using querySelector">
     <div class="slds-var-m-around_medium">
-      <lightning-input name="fname" label="First Name" onchange={handleChange}>
-      </lightning-input>
-      <lightning-input name="lname" label="Last Name" onchange={handleChange}>
-      </lightning-input>
-      <p class="slds-var-m-top_medium">
-        Uppercased Full Name: {uppercasedFullName}
-      </p>
+      <p>Hello, {greeting}!</p>
+      <lightning-input label="Name" value={greeting}> </lightning-input>
+      <lightning-button
+        label="Click Me"
+        onclick={handleClick}
+        variant="brand"
+      ></lightning-button>
     </div>
   </lightning-card>
 </template>
