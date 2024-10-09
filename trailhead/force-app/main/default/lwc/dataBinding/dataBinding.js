@@ -1,9 +1,18 @@
 import { LightningElement } from "lwc";
 
 export default class DataBinding extends LightningElement {
-  greeting = "Sanjay";
+  firstName = "";
+  lastName = "";
 
   handleClick(event) {
-    this.greeting = this.template.querySelector("lightning-input").value;
+    let input = this.template.querySelectorAll("lightning-input");
+
+    input.forEach((element) => {
+      if (element.name === "fname") {
+        this.firstName = element.value;
+      } else if (element.name === "lname") {
+        this.lastName = element.value;
+      }
+    });
   }
 }
