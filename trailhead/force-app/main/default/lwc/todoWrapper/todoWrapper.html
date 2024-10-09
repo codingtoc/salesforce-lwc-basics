@@ -1,0 +1,5 @@
+<template>
+  <template for:each={todoList} for:item="todo">
+    <c-todo-item key={todo.Id} item-name={todo.Name}></c-todo-item>
+  </template>
+</template>
