@@ -1,0 +1,26 @@
+<template>
+  <lightning-card
+    title="Using SLDS Styling Hooks for Based Lightning Components"
+  >
+    <div class="slds-var-m-around_medium">
+      <div>Base Lightning Components</div>
+      <lightning-button
+        class="slds-var-p-around_medium"
+        variant="brand"
+        label="Submit"
+      ></lightning-button>
+      <lightning-badge label="Active"></lightning-badge>
+      <br />
+      <div>Base Lightning Components with Custom Styling</div>
+      <lightning-button
+        class="myNewStyleForButton slds-var-p-around_medium"
+        variant="brand"
+        label="Submit"
+      ></lightning-button>
+      <lightning-badge
+        class="myNewStyleForBadge"
+        label="Active"
+      ></lightning-badge>
+    </div>
+  </lightning-card>
+</template>
